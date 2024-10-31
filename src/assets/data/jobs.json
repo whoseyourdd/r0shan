@@ -1,0 +1,75 @@
+{
+  "base_jobs": {
+    "novice": {
+      "name": "Novice",
+      "base_stats": {
+        "hp": 100,
+        "mp": 50,
+        "strength": 10,
+        "agility": 10,
+        "intelligence": 10,
+        "vitality": 10
+      },
+      "skills": ["basic_attack"]
+    }
+  },
+  "first_jobs": {
+    "warrior": {
+      "name": "Warrior",
+      "requirements": {
+        "level": 10,
+        "strength": 15
+      },
+      "bonus_stats": {
+        "hp": 50,
+        "strength": 5,
+        "vitality": 3
+      },
+      "skills": ["slash", "defensive_stance"]
+    },
+    "mage": {
+      "name": "Mage",
+      "requirements": {
+        "level": 10,
+        "intelligence": 15
+      },
+      "bonus_stats": {
+        "mp": 50,
+        "intelligence": 5
+      },
+      "skills": ["fireball", "ice_bolt"]
+    }
+  },
+  "advanced_jobs": {
+    "knight": {
+      "name": "Knight",
+      "parent": "warrior",
+      "requirements": {
+        "level": 30,
+        "job_level": 20,
+        "strength": 30,
+        "vitality": 25
+      },
+      "bonus_stats": {
+        "hp": 200,
+        "strength": 10,
+        "vitality": 8
+      },
+      "skills": ["holy_strike", "shield_bash"]
+    },
+    "wizard": {
+      "name": "Wizard",
+      "parent": "mage",
+      "requirements": {
+        "level": 30,
+        "job_level": 20,
+        "intelligence": 35
+      },
+      "bonus_stats": {
+        "mp": 150,
+        "intelligence": 15
+      },
+      "skills": ["meteor", "lightning_storm"]
+    }
+  }
+}

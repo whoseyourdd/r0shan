@@ -1,0 +1,62 @@
+{
+  "normal": {
+    "slime": {
+      "name": "Slime",
+      "level": 1,
+      "stats": {
+        "hp": 50,
+        "strength": 5,
+        "agility": 3,
+        "intelligence": 1,
+        "vitality": 5
+      },
+      "drops": {
+        "exp": 10,
+        "items": {
+          "slime_essence": 0.5,
+          "hp_potion": 0.1
+        }
+      }
+    },
+    "wolf": {
+      "name": "Wolf",
+      "level": 5,
+      "stats": {
+        "hp": 120,
+        "strength": 12,
+        "agility": 15,
+        "intelligence": 3,
+        "vitality": 8
+      },
+      "drops": {
+        "exp": 25,
+        "items": {
+          "wolf_fang": 0.4,
+          "wolf_pelt": 0.3
+        }
+      }
+    }
+  },
+  "bosses": {
+    "ancient_dragon": {
+      "name": "Ancient Dragon",
+      "level": 50,
+      "stats": {
+        "hp": 10000,
+        "strength": 100,
+        "agility": 50,
+        "intelligence": 80,
+        "vitality": 120
+      },
+      "drops": {
+        "exp": 5000,
+        "items": {
+          "dragon_scale": 1.0,
+          "dragon_heart": 0.1,
+          "ancient_crystal": 0.5
+        }
+      },
+      "skills": ["flame_breath", "tail_sweep", "dragon_roar"]
+    }
+  }
+}

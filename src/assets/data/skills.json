@@ -1,0 +1,62 @@
+{
+  "basic": {
+    "basic_attack": {
+      "name": "Basic Attack",
+      "type": "physical",
+      "power": 100,
+      "mp_cost": 0,
+      "cooldown": 0
+    }
+  },
+  "warrior": {
+    "slash": {
+      "name": "Slash",
+      "type": "physical",
+      "power": 150,
+      "mp_cost": 10,
+      "cooldown": 3,
+      "requirements": {
+        "level": 1,
+        "job": "warrior"
+      }
+    },
+    "defensive_stance": {
+      "name": "Defensive Stance",
+      "type": "buff",
+      "effects": {
+        "defense": 50
+      },
+      "duration": 30,
+      "mp_cost": 20,
+      "cooldown": 60
+    }
+  },
+  "mage": {
+    "fireball": {
+      "name": "Fireball",
+      "type": "magical",
+      "element": "fire",
+      "power": 200,
+      "mp_cost": 30,
+      "cooldown": 5,
+      "requirements": {
+        "level": 1,
+        "job": "mage"
+      }
+    },
+    "ice_bolt": {
+      "name": "Ice Bolt",
+      "type": "magical",
+      "element": "ice",
+      "power": 180,
+      "mp_cost": 25,
+      "cooldown": 4,
+      "effects": {
+        "slow": {
+          "power": 20,
+          "duration": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "recipes": {
+    "weapons": {
+      "iron_sword": {
+        "name": "Iron Sword",
+        "type": "weapon",
+        "materials": {
+          "iron_ore": 3,
+          "wood": 1
+        },
+        "skill_req": {
+          "blacksmithing": 1
+        },
+        "result": {
+          "stats": {
+            "strength": 8,
+            "agility": 3
+          },
+          "durability": 100
+        }
+      },
+      "magic_staff": {
+        "name": "Magic Staff",
+        "materials": {
+          "magic_crystal": 2,
+          "wood": 2,
+          "mana_essence": 1
+        },
+        "skill_req": {
+          "magic_crafting": 2
+        },
+        "result": {
+          "stats": {
+            "intelligence": 10,
+            "mp": 25
+          },
+          "durability": 80
+        }
+      }
+    },
+    "armor": {
+      "iron_plate": {
+        "name": "Iron Plate Armor",
+        "materials": {
+          "iron_ore": 5,
+          "leather": 2
+        },
+        "skill_req": {
+          "blacksmithing": 2
+        },
+        "result": {
+          "stats": {
+            "vitality": 10,
+            "defense": 15
+          },
+          "durability": 120
+        }
+      }
+    },
+    "consumables": {
+      "greater_hp_potion": {
+        "name": "Greater Health Potion",
+        "materials": {
+          "hp_potion": 2,
+          "red_herb": 3
+        },
+        "skill_req": {
+          "alchemy": 2
+        },
+        "result": {
+          "effect": {
+            "hp": 150
+          }
+        }
+      }
+    }
+  },
+  "enhancement": {
+    "rules": {
+      "max_level": 20,
+      "base_success_rate": 100,
+      "level_penalty": 5,
+      "fail_penalty": {
+        "durability": 10,
+        "destroy_chance": {
+          "threshold": 15,
+          "chance": 30
+        }
+      }
+    },
+    "materials": {
+      "enhancement_stone": {
+        "success_rate": 100,
+        "level_range": [1, 5]
+      },
+      "magic_stone": {
+        "success_rate": 80,
+        "level_range": [6, 10]
+      },
+      "ancient_stone": {
+        "success_rate": 60,
+        "level_range": [11, 15]
+      },
+      "dragon_stone": {
+        "success_rate": 40,
+        "level_range": [16, 20]
+      }
+    },
+    "bonuses": {
+      "weapon": {
+        "per_level": {
+          "attack": 2,
+          "critical_rate": 0.5
+        },
+        "thresholds": {
+          "5": {
+            "attack_speed": 5
+          },
+          "10": {
+            "critical_damage": 20
+          },
+          "15": {
+            "penetration": 10
+          },
+          "20": {
+            "all_stats": 5
+          }
+        }
+      },
+      "armor": {
+        "per_level": {
+          "defense": 3,
+          "hp": 10
+        },
+        "thresholds": {
+          "5": {
+            "damage_reduction": 2
+          },
+          "10": {
+            "status_resistance": 10
+          },
+          "15": {
+            "hp_regen": 5
+          },
+          "20": {
+            "all_stats": 5
+          }
+        }
+      }
+    }
+  },
+  "crafting_skills": {
+    "blacksmithing": {
+      "name": "Blacksmithing",
+      "max_level": 10,
+      "level_bonuses": {
+        "success_rate": 2,
+        "durability": 5,
+        "quality": 1
+      }
+    },
+    "alchemy": {
+      "name": "Alchemy",
+      "max_level": 10,
+      "level_bonuses": {
+        "success_rate": 2,
+        "potency": 5,
+        "duration": 10
+      }
+    },
+    "magic_crafting": {
+      "name": "Magic Crafting",
+      "max_level": 10,
+      "level_bonuses": {
+        "success_rate": 2,
+        "magic_power": 3,
+        "mp_cost_reduction": 2
+      }
+    }
+  }
+}

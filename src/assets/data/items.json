@@ -1,0 +1,72 @@
+{
+  "equipment": {
+    "weapons": {
+      "wooden_sword": {
+        "name": "Wooden Sword",
+        "type": "weapon",
+        "stats": {"strength": 5, "agility": 2},
+        "level_req": 1,
+        "set": "novice"
+      },
+      "fire_staff": {
+        "name": "Fire Staff",
+        "type": "weapon",
+        "stats": {"intelligence": 8, "mp": 20},
+        "level_req": 5,
+        "set": "flame"
+      }
+    },
+    "armor": {
+      "leather_armor": {
+        "name": "Leather Armor",
+        "type": "armor",
+        "stats": {"vitality": 5, "agility": 3},
+        "level_req": 1,
+        "set": "novice"
+      },
+      "flame_robe": {
+        "name": "Flame Robe",
+        "type": "armor",
+        "stats": {"intelligence": 5, "mp": 30},
+        "level_req": 5,
+        "set": "flame"
+      }
+    }
+  },
+  "consumables": {
+    "hp_potion": {
+      "name": "Health Potion",
+      "type": "consumable",
+      "effect": {"hp": 50},
+      "duration": 0
+    },
+    "mp_potion": {
+      "name": "Mana Potion",
+      "type": "consumable",
+      "effect": {"mp": 30},
+      "duration": 0
+    }
+  },
+  "materials": {
+    "iron_ore": {
+      "name": "Iron Ore",
+      "type": "material",
+      "rarity": "common"
+    },
+    "magic_crystal": {
+      "name": "Magic Crystal",
+      "type": "material",
+      "rarity": "rare"
+    }
+  },
+  "set_bonuses": {
+    "novice": {
+      "2_piece": {"hp": 50, "mp": 20},
+      "4_piece": {"all_stats": 5}
+    },
+    "flame": {
+      "2_piece": {"fire_damage": 20},
+      "4_piece": {"intelligence": 15, "mp_regen": 5}
+    }
+  }
+}
